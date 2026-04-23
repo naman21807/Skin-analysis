@@ -9,7 +9,7 @@ import os
 load_dotenv()
 API_key=os.getenv("API_KEY")
 
-client = genai.Client(api_key=API_KEY)
+client = genai.Client(api_key=API_key)
 
 def get_response(type):
     prompt = f"You are a professional dermatologist tell description characterstics immediate action plan if needed, recommended routines and  why it works and any pro tip for {type} don't type too much neither too less, just hit the sweet spot "
